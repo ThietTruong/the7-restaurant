@@ -1,7 +1,5 @@
 import "../styles/globals.css";
 import Head from "next/head";
-
-import Home from "./home";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -18,12 +16,22 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@200&family=Roboto:wght@100&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@1,700&family=Roboto:wght@100&display=swap"
           rel="stylesheet"
         ></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
           rel="stylesheet"
         ></link>
       </Head>

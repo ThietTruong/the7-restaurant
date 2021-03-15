@@ -1,24 +1,64 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/logo.png";
 import Link from "next/link";
 import styles from "../../../styles/Header.module.css";
-function Header() {
+
+function Header({ page }) {
+  const [scroll, setScroll] = useState(false);
+  const changeHeader = () => {
+    if (window.scrollY >= 300) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeHeader);
+  }, []);
   return (
-    <div className={styles.header}>
+    <div
+      className={styles.header}
+      style={
+        scroll
+          ? {
+              position: "fixed",
+              width: "100%",
+              backgroundColor: "#000000D9",
+              zIndex: "5",
+            }
+          : { position: "relative" }
+      }
+    >
       <div className={styles.header__bar}>
         <div className={styles.header__logo}>
-          <img src={logo}></img>
+          <img src={logo} onClick={changeHeader}></img>
         </div>
         <div className={styles.categories}>
           <ul className={styles.categories__list}>
             <li className={styles.categories__item}>
               <Link href="/">
-                <a className={styles.item__category_link}>Home</a>
+                <a
+                  className={styles.item__category_link}
+                  className={
+                    page === "home" ? styles.active : styles.item__category_link
+                  }
+                >
+                  Home
+                </a>
               </Link>
             </li>
             <li className={styles.categories__item}>
-              <Link href="/">
-                <a className={styles.item__category_link}>About us</a>
+              <Link href="/components/aboutUs">
+                <a
+                  className={styles.item__category_link}
+                  className={
+                    page === "aboutus"
+                      ? styles.active
+                      : styles.item__category_link
+                  }
+                >
+                  About us
+                </a>
               </Link>
             </li>
             <li className={styles.categories__item}>

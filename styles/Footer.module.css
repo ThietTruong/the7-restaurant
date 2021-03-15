@@ -1,0 +1,45 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #000;
+  padding: 8rem 8.6rem 5rem 8.7rem;
+}
+.footer__logo {
+  padding: 0 3rem 7.5rem;
+  text-align: center;
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
+.footer__text__sub {
+  padding: 0 3rem 4rem;
+}
+.footer__icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5.5rem;
+}
+.links__item > svg {
+  width: 2.4rem;
+  object-fit: cover;
+  color: #fff;
+}
+.footer__content > * {
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  font-size: "Poppins";
+}
+.footer__text__sub > p {
+  margin-bottom: 1rem;
+}
+.links__item {
+  margin: 0 1rem;
+}
+.footer__text {
+  text-align: center;
+  font-size: 2rem;
+  color: #a0a0a0;
+  font-size: "Poppins";
+}

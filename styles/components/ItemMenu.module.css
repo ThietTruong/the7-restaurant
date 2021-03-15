@@ -1,0 +1,51 @@
+.item {
+  padding: 1.6rem 0;
+}
+.itemmenu {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  padding-bottom: 1.6rem;
+}
+.itemmenu__content {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.itemmenu__title {
+  color: #303030;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 17px;
+  line-height: 22px;
+}
+.itemmenu__des {
+  font: normal 1.4rem/2.5rem "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+  word-spacing: normal;
+  color: #878787;
+
+  margin-bottom: 0.8rem;
+
+  line-height: 2.2rem;
+}
+.itemMenu__price {
+  text-align: right;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #c5ab6b;
+  margin-bottom: 0.8rem;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  margin: 0 0 0.8rem;
+}
+.dash {
+  width: 100%;
+  border-color: rgba(34, 34, 34, 0.15);
+  border-top-width: 1px;
+  border-top-style: dashed;
+  border-bottom: none;
+  grid-template-columns: 1/3;
+}
+.seasonaloffers__button {
+  text-align: center;
+}

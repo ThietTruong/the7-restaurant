@@ -1,4 +1,4 @@
-.home {
+.banner {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("../pages/assets/images/slide.jpg");
@@ -10,10 +10,12 @@
   background-color: rgba(#000, 1);
   position: relative;
 }
+/* -------------banner open------------- */
 /* content */
+
 .introduce__content {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1 1 1 1;
   justify-content: center;
 }
 .introduce__content_title {
@@ -27,14 +29,534 @@
   font-family: "Great Vibes", cursive;
   font-size: 9rem;
   color: #cfad67;
+  margin: 0 1rem;
 }
 
 .introduce__content_name {
   color: #fff;
   font-size: 9.5rem;
-  font-weight: 700;
+  font-weight: 900;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
 }
 
 /* introduce__content_time */
+.introduce__content_line {
+  text-align: center;
+}
+.introduce__content_time {
+  display: grid;
+  grid-template-columns: 1 1 1;
+}
+.time__title {
+  margin: 1.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+  color: #cfad67;
+  font-family: "Poppins", sans-serif;
+}
+.time__schedule {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.home__button {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.home__button_links {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 1.7rem 3.5rem 1.6rem;
+  border-radius: 4rem;
+  background-color: #cfad67;
+  font-weight: 800;
+  cursor: pointer;
+}
+/* introduce */
+.introduce {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* -------------banner close------------- */
+/* --------------ourhistory open --------------- */
+/* img */
+.ourhistory {
+  width: 65%;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  display: grid;
+  margin: 9rem auto;
+}
+.ourhistory__img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/2;
+  width: 55rem;
+  height: 38rem;
+  grid-gap: 3rem;
+}
+.img__about1 {
+  grid-column: 1/2;
+}
+.img__about1 > img {
+  width: 25.75rem;
+  height: 17.4rem;
+  object-fit: cover;
+}
+.img__about2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.img__about2 > img {
+  width: 25.75rem;
+  height: 17.4rem;
+  object-fit: cover;
+}
+.img__chef1 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.img__chef1 img {
+  width: 25.75rem;
+  height: 37.75rem;
+  object-fit: cover;
+}
+/* des */
+.ourhistory__des {
+  padding: 0 3rem 3rem;
+}
+.ourhistory__des_title {
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+.ourhistory__des_name {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #303030;
+  margin-bottom: 2rem;
+}
+.ourhistory__des_text {
+  padding: 0 0 3.5rem;
+}
+.ourhistory__des_text > p {
+  font: normal 1.4rem / 2.5rem "Open Sans", Helvetica, Arial, Verdana,
+    sans-serif;
+  word-spacing: normal;
+  color: #878787;
+  margin-bottom: 1rem;
+}
+/* -------------ourhistory close --------------- */
+/* -------------seasonal offers open-------------- */
+.seasonaloffers {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #f4f4f4;
+}
+.seasonaloffers__title {
+  padding: 8rem 3rem 7rem;
+}
+.seasonaloffers__title_text {
+  text-align: center;
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+.seasonaloffers__title_name {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #303030;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+.seasonaloffers__title_dash {
+  font-size: 4rem;
+  color: #cfad67;
+  text-align: center;
+}
+/* special */
+.seasonaloffers__specials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.seasonaloffers__specials_img {
+  margin-left: auto;
+  margin-right: 0;
+}
+.seasonaloffers__specials_img > img {
+  max-width: 55rem;
+  max-height: 55rem;
+  object-fit: cover;
+}
+.seasonaloffers__specials_des {
+  max-width: 55rem;
+  max-height: 55rem;
+  background-color: #fff;
+}
+.specials_des {
+  margin: 0 3rem;
+  padding: 4rem 4.5rem 1.5rem;
+}
+.seasonaloffers__specials_title {
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #303030;
+  margin-top: -0.5rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-align: center;
+}
+.seasonaloffers__specials_dash {
+  color: #cfad67;
+  font-size: 4rem;
+  text-align: center;
+}
+/* --------------- Seasonal offers  close -------------- */
+/* --------------- Seasonal menu open --------------- */
+.seasonaloffers__menu_header {
+  padding: 9rem 3rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.seasonaloffers__menu_text {
+  text-align: center;
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+.seasonaloffers__menu_name {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #303030;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.seasonaloffers__menu_time {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #bfbfbf;
+  margin-top: 5px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+.seasonaloffers__menu_listmenu {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 121rem;
+  max-height: 24.6rem;
+  column-gap: 6rem;
+}
+.seasonaloffers__button {
+  margin: auto;
+  padding: 5rem 3rem 8rem;
+}
+/* --------------- Seasonal menu close --------------- */
+/* -------------- Up comming open --------------- */
+.upcoming {
+  padding: 8rem 3rem 7rem;
+  width: 100%;
+  background-image: url("../pages/assets/images/press.jpg");
+  background-color: rgba(17, 17, 17, 0.65);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.upcoming__title {
+  text-align: center;
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+.upcoming__name {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 55px;
+}
+.upcoming__dash {
+  font-size: 4rem;
+  text-align: center;
+  word-spacing: normal;
+  color: #878787;
+}
+.upcoming__slide {
+  padding-bottom: 4rem;
+}
+/* -------------- Up comming close -------------- */
+/* -------------- Ourinterior open -------------- */
+.ourinterior {
+}
+.ourinterior__header {
+  padding: 8rem 3rem 7rem;
+}
+.ourinterior__title {
+  text-align: center;
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+.ourinterior__name {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #303030;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+.ourhistory__dash {
+  font-size: 4rem;
+  color: #cfad67;
+  text-align: center;
+}
+/* view img */
+.ourhistory__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 115rem;
+  margin: auto;
+  gap: 3rem;
+  padding: 0 1.5rem 7rem;
+}
+/* -------------- Ourinterior close -------------- */
+/* --------------- Obout US open ---------------*/
+.aboutus {
+  background: rgb(244, 244, 244);
+}
+.aboutus__header {
+  padding: 8rem 3rem 7rem;
+}
+.aboutus__title {
+  text-align: center;
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+.aboutus__name {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #303030;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+.aboutus__dash {
+  font-size: 4rem;
+  color: #cfad67;
+  text-align: center;
+}
+/* --------------- Obout US close ---------------*/
+/* --------------- Obout US Press open ---------------*/
+.abpress {
+  background-repeat: no-repeat;
+  background-color: rgba(17, 17, 17, 0.65);
+  background-image: url(https://the7.io/restaurant/wp-content/uploads/sites/27/2016/07/press.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  left: -5px;
+  background-position: 50% -76px;
+  background-size: cover;
+  padding-bottom: 4rem;
+}
+.abpress__header {
+  padding: 8rem 3rem 7rem;
+}
+.abpress__title {
+  text-align: center;
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+.abpress__name {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #fff;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+.abpress__dash {
+  font-size: 4rem;
+  color: #cfad67;
+  text-align: center;
+}
+.abpress__list {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  margin: auto;
+}
+/* --------------- Obout US Press close ---------------*/
+/* --------------- Ourchesfs open ---------------*/
+.ourchesf__container {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  max-width: 121rem;
+  max-height: 67.1rem;
+  margin: auto;
+  padding: 9rem 0 6rem;
+  gap: 6rem;
+}
+.ourchesf__img > img {
+  width: 34.4rem;
+  height: 49rem;
+  object-fit: cover;
+}
+.ourchesf__title {
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+.ourchesf__name {
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #303030;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+.ourchesf__text > p {
+  font-size: 1.4rem;
+  color: #878787;
+  margin-bottom: 1rem;
+}
+
+.ourchesf__yourname {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #303030;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 3rem;
+}
+.ourchesf__des_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+}
+.des_footer_text {
+  font-size: 1.4rem;
+  font-family: "Open Sans";
+  color: #878787;
+  margin-left: 0;
+  margin-right: auto;
+}
+.des_footer_img {
+  margin-left: auto;
+  margin-right: 0;
+}
+/* --------------- Ourchesfs close ---------------*/
+/* --------------- Booking Open ---------------*/
+.booking {
+  background-color: #f4f4f4;
+}
+.booking__container {
+  max-width: 115rem;
+  margin: auto;
+  padding-bottom: 8rem;
+}
+.booking__header {
+  padding: 8rem 3rem 7rem;
+}
+.booking__title {
+  text-align: center;
+  font-family: "Great Vibes";
+  --font-weight: theme;
+  color: #c5ab6b;
+  margin-bottom: 0.5rem;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+.booking__name {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: normal;
+  color: #000;
+  font-size: 50px;
+  line-height: 55px;
+}
+.booking__dash {
+  font-size: 4rem;
+  text-align: center;
+  word-spacing: normal;
+  color: #878787;
+}
+.booking__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+.booking__content__img {
+  text-align: center;
+  width: 60.5rem;
+  height: 47.55rem;
+}
+.booking__content__img > img {
+  width: 54.5rem;
+  height: 47.55rem;
+  margin: 0 1rem;
+  object-fit: cover;
+}
+.booking__content__form {
+  background: #fff;
+  padding: 0.5rem 4rem 4rem;
+}
+.input__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 3rem;
+}
+.input__form {
+  row-gap: 2rem;
+  padding: 3rem 0;
+}
+.content__form_text > p {
+  padding-top: 1rem;
+  color: #878787;
+  font-size: 1.4rem;
+}
+
+/* --------------- Booking Close ---------------*/

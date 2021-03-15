@@ -1,0 +1,30 @@
+.ItemInfor {
+  padding: 1.5rem;
+  max-width: 30rem;
+  max-height: 400rem;
+}
+.ItemInfor__container {
+  background-color: #fff;
+  padding: 4rem 3rem;
+}
+.ItemInfor__header {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.ItemInfor__content {
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  color: #878787;
+  text-align: center;
+}
+.ItemInfor__content > p {
+  text-align: center;
+}
+.ItemInfor__footer {
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: "Raleways";
+  color: #303030;
+  margin-top: 3rem;
+}

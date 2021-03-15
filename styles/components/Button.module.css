@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  font-family: "Poppins", sans-serif;
+  padding: 1.7rem 3.5rem 1.6rem;
+  border-radius: 4rem;
+  background-color: #cfad67;
+  font-weight: 800;
+  cursor: pointer;
+}
+.button__links {
+  color: #fff;
+}

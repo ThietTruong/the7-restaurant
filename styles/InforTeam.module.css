@@ -1,0 +1,39 @@
+.inforteam {
+  max-width: 38.33rem;
+  background-color: #f4f4f4;
+}
+.inforteam img {
+  width: 100%;
+  object-fit: cover;
+}
+.inforteam__content {
+  padding: 4rem;
+}
+.inforteam__title {
+  font-family: "Poppins";
+  --font-weight: 700;
+  color: #000;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+.inforteam__name {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #c5ab6b;
+  font-size: 1.4rem;
+}
+.inforteam__des p {
+  font-size: 1.4rem;
+  color: #878787;
+  padding: 1rem 0 2.5rem;
+}
+.inforteam__listicon {
+  display: flex;
+}
+.links__item {
+  margin: 0.5rem;
+}
+.links__item > svg {
+  width: 2rem;
+  color: #c5ab6b;
+}
